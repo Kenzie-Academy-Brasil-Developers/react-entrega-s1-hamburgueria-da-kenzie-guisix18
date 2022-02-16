@@ -1,0 +1,19 @@
+.section__products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0 22px;
+    padding: 0 17px;
+    overflow-x: scroll;
+}
+
+
+@media screen and (min-width: 890px) {
+    .section__products {
+        width: 70%;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+}
