@@ -1,5 +1,5 @@
-import { useState } from "react/cjs/react.development"
-import "./style.css"
+import { useState } from "react";
+import "./style.css";
 
 const Header = ({showProducts}) => {
 
