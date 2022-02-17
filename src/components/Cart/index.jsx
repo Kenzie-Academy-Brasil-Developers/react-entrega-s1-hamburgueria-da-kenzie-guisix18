@@ -1,6 +1,8 @@
 import "./style.css";
 import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({cartProducts, setCurrentSale}) => {
 
@@ -13,7 +15,7 @@ const Cart = ({cartProducts, setCurrentSale}) => {
         <>
         <div className="cart">
         <h2>Carrinho de compras</h2>
-        {cartProducts.length === 0 ?
+        {cartProducts.length === 0  ?
 
         <div className="cartBackground">
             <h3>Sua sacola está vazia</h3>

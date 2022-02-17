@@ -1,10 +1,6 @@
 import "./style.css";
 
-const CartProduct = ({cartProduct, removeElement}) => {
-
-    // const reject = () => {
-    //     toast("Já tem esse item no carrinho.");
-    // }
+const CartProduct = ({cartProduct, removeElement, validateElement}) => {
  
     return (
         <div className="productCart">

@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import ProductList from './components/ProducstList';
 import Header from './components/Header';
 import Cart from './components/Cart';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
@@ -22,20 +23,15 @@ function App() {
     setFilteredProducts(filter);
   }
 
-  const handleClick = (productId) => {
-    const findProduct = products.find((product) => product.id === productId);
-    setCurrentSale([...currentSale, findProduct]);
-  }
-
   return (
     <>
+    <ToastContainer />
       <Header showProducts={showProducts}/>
       <main>
-        <ProductList products={products} handleClick={handleClick} filteredProducts={filteredProducts} />
+        <ProductList products={products} filteredProducts={filteredProducts} setCurrentSale={setCurrentSale} currentSale={currentSale} />
         <Cart cartProducts={currentSale} setCurrentSale={setCurrentSale}/>
       </main>
     </>
-    
   );
 }
 
