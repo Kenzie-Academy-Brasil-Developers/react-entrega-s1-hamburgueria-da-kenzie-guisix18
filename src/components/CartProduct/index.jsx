@@ -1,6 +1,6 @@
 import "./style.css";
 
-const CartProduct = ({cartProduct, removeElement, validateElement}) => {
+const CartProduct = ({cartProduct, removeElement}) => {
  
     return (
         <div className="productCart">

@@ -1,8 +1,6 @@
 import "./style.css";
 import CartProduct from "../CartProduct";
 import CartTotal from "../CartTotal";
-import { ToastContainer, toast } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
 
 const Cart = ({cartProducts, setCurrentSale}) => {
 
