@@ -19,7 +19,7 @@ function App() {
 
   const showProducts = (Product) => { 
     const validate = Product.toLowerCase();
-    const filter = products.filter((product) => product.name.toLowerCase() === validate || product.category.toLowerCase() === validate);
+    const filter = products.filter((product) => product.name.toLowerCase().includes(validate) || product.category.toLowerCase().includes(validate))
     setFilteredProducts(filter);
   }
 
